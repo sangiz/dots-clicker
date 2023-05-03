@@ -9,6 +9,7 @@ namespace Assets.Scripts.UI.Widgets
 {
     public class LevelSelectionButton : MonoBehaviour
     {
+        [SF] private RectTransform rectTransform;
         [SF] private TMP_Text levelText;
         [SF] private Button button;
 
@@ -27,6 +28,7 @@ namespace Assets.Scripts.UI.Widgets
             levelText.text = $"LEVEL {levelIndex + 1}";
 
             transform.localScale = Vector3.one;
+            rectTransform.anchoredPosition3D = Vector3.zero;
         }
 
         private void ClickAction()
