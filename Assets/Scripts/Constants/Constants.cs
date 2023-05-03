@@ -17,6 +17,8 @@ public static class Constants
 
         public static class UI
         {
+            public const string ConnectablePointWidget = "Prefabs/UI/ConnectablePointWidget";
+            public const string LevelSelectionButton = "Prefabs/UI/LevelSelectionButton";
         }
     }
 }
